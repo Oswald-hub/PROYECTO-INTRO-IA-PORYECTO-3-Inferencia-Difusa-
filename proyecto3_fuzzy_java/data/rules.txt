@@ -1,0 +1,33 @@
+# Base de reglas de ejemplo para el caso tipo caldera
+# Formato:
+# IF variable1 IS conjunto1 AND/OR variable2 IS conjunto2 THEN variableSalida IS conjuntoSalida
+
+IF temperatura IS Frio AND presion IS Debil THEN accion IS PA
+IF temperatura IS Frio AND presion IS Baja THEN accion IS PM
+IF temperatura IS Frio AND presion IS Normal THEN accion IS PB
+IF temperatura IS Frio AND presion IS Fuerte THEN accion IS ZR
+IF temperatura IS Frio AND presion IS Alta THEN accion IS NB
+
+IF temperatura IS Fresco AND presion IS Debil THEN accion IS PA
+IF temperatura IS Fresco AND presion IS Baja THEN accion IS PM
+IF temperatura IS Fresco AND presion IS Normal THEN accion IS ZR
+IF temperatura IS Fresco AND presion IS Fuerte THEN accion IS NB
+IF temperatura IS Fresco AND presion IS Alta THEN accion IS NM
+
+IF temperatura IS Normal AND presion IS Debil THEN accion IS PM
+IF temperatura IS Normal AND presion IS Baja THEN accion IS PB
+IF temperatura IS Normal AND presion IS Normal THEN accion IS ZR
+IF temperatura IS Normal AND presion IS Fuerte THEN accion IS NB
+IF temperatura IS Normal AND presion IS Alta THEN accion IS NM
+
+IF temperatura IS Tibio AND presion IS Debil THEN accion IS PB
+IF temperatura IS Tibio AND presion IS Baja THEN accion IS ZR
+IF temperatura IS Tibio AND presion IS Normal THEN accion IS NB
+IF temperatura IS Tibio AND presion IS Fuerte THEN accion IS NM
+IF temperatura IS Tibio AND presion IS Alta THEN accion IS NA
+
+IF temperatura IS Caliente AND presion IS Debil THEN accion IS ZR
+IF temperatura IS Caliente AND presion IS Baja THEN accion IS NB
+IF temperatura IS Caliente AND presion IS Normal THEN accion IS NM
+IF temperatura IS Caliente AND presion IS Fuerte THEN accion IS NA
+IF temperatura IS Caliente AND presion IS Alta THEN accion IS NA
