@@ -1,0 +1,16 @@
+# ============================================================
+# REGLAS FUZZY - CASO RESTAURANTE
+# Compatible con el parser original: IF ... IS ... AND ... THEN ... IS ...
+# ============================================================
+
+IF calidad_servicio IS Malo AND calidad_comida IS Mala THEN propina IS Baja
+IF calidad_servicio IS Malo AND calidad_comida IS Regular THEN propina IS Baja
+IF calidad_servicio IS Malo AND calidad_comida IS Buena THEN propina IS Media
+
+IF calidad_servicio IS Regular AND calidad_comida IS Mala THEN propina IS Baja
+IF calidad_servicio IS Regular AND calidad_comida IS Regular THEN propina IS Media
+IF calidad_servicio IS Regular AND calidad_comida IS Buena THEN propina IS Alta
+
+IF calidad_servicio IS Bueno AND calidad_comida IS Mala THEN propina IS Media
+IF calidad_servicio IS Bueno AND calidad_comida IS Regular THEN propina IS Alta
+IF calidad_servicio IS Bueno AND calidad_comida IS Buena THEN propina IS Alta

@@ -1,0 +1,19 @@
+# ============================================================
+# VARIABLES FUZZY - CASO RESTAURANTE
+# Compatible con el FuzzySystemLoader que usa ; y NO usa END
+# ============================================================
+
+VARIABLE;calidad_servicio;INPUT;0;10
+SET;Malo;TRAPEZOIDAL;0;0;2;4
+SET;Regular;TRIANGULAR;2;5;8
+SET;Bueno;TRAPEZOIDAL;6;8;10;10
+
+VARIABLE;calidad_comida;INPUT;0;10
+SET;Mala;TRAPEZOIDAL;0;0;2;4
+SET;Regular;TRIANGULAR;2;5;8
+SET;Buena;TRAPEZOIDAL;6;8;10;10
+
+VARIABLE;propina;OUTPUT;0;30
+SET;Baja;TRAPEZOIDAL;0;0;5;10
+SET;Media;TRIANGULAR;5;15;25
+SET;Alta;TRAPEZOIDAL;20;25;30;30

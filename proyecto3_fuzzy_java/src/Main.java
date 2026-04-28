@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * Punto de entrada del Proyecto 3 - Inferencia Difusa.
  *
- * Uso recomendado:
+
  *   javac -d out src/*.java
  *   java -cp out Main data/variables.txt data/rules.txt temperatura=115 presion=70
  *
@@ -18,6 +18,7 @@ public class Main {
             Path rulesPath = args.length >= 2 ? Path.of(args[1]) : Path.of("data/rules.txt");
 
             Map<String, Double> crispInputs = new LinkedHashMap<>();
+            
             if (args.length >= 3) {
                 for (int i = 2; i < args.length; i++) {
                     String[] pair = args[i].split("=");
@@ -27,7 +28,7 @@ public class Main {
                     crispInputs.put(pair[0].trim(), Double.parseDouble(pair[1].trim()));
                 }
             } else {
-                // Caso de prueba similar al ejemplo de clase de la caldera.
+                // Caso de prueba al ejemplo de clase de la caldera.
                 crispInputs.put("temperatura", 115.0);
                 crispInputs.put("presion", 70.0);
             }

@@ -18,6 +18,8 @@ java -cp out Main
 
 ```bash
 java -cp out Main data/variables.txt data/rules.txt temperatura=115 presion=70
+java -cp out Main data/variables_restaurante.txt data/rules_restaurante.txt calidad_servicio=8 calidad_comida=7
+
 ```
 
 ## Archivos de configuración
