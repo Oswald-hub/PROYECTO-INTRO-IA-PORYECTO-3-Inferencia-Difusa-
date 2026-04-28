@@ -1,0 +1,20 @@
+
+# Aqui declaramos las 2 variables de entrada (velocidad, distancia_sensor) y definimos variable salida (giro_angular)
+
+#Variable 1
+VARIABLE;velocidad;INPUT;0;3
+SET;Baja;TRAPEZOIDAL;0;0.5;0.5;1.5
+SET;Media;TRIANGULAR;0.5;1.5;2.5
+SET;Alta;TRAPEZOIDAL;1.5;2.5;3;3
+
+#Variable 2
+VARIABLE;distancia_sensor;INPUT;5;25
+SET;Cerca;TRIANGULAR;5;10;15
+SET;Media;TRIANGULAR;10;15;20
+SET;Lejos;TRAPEZOIDAL;15;20;25;25
+
+#Variable salida
+VARIABLE;giro_angular;OUTPUT;0;10
+SET;Lento;TRAPEZOIDAL;0;1.5;2.5;5
+SET;Medio;TRIANGULAR;2.5;5;7.5
+SET;Rapido;TRAPEZOIDAL;5;7.5;10;10

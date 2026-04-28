@@ -20,6 +20,10 @@ java -cp out Main
 java -cp out Main data/variables.txt data/rules.txt temperatura=115 presion=70
 java -cp out Main data/variables_restaurante.txt data/rules_restaurante.txt calidad_servicio=8 calidad_comida=7
 
+#Este es el comando ejecutable en la linea de comandos cuando quieres especificar el tipo de problema a desarrollar en 
+#el motor de inferencia caso, Robot. 
+java -cp out Main data/variables_robot.txt data/rules_robot.txt velocidad=2.1 distancia_sensor=15
+
 ```
 
 ## Archivos de configuración

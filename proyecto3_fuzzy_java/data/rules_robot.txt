@@ -1,0 +1,15 @@
+#Reglas 
+# IF var1 IS conju1 AND var2 IS conju2 THEN variableSalida IS conjuntoSalida
+
+
+IF velocidad IS Baja AND distancia_sensor IS Cerca THEN giro_angular IS Rapido
+IF velocidad IS Baja AND distancia_sensor IS Media THEN giro_angular IS Lento
+IF velocidad IS Baja AND distancia_sensor IS Lejos THEN giro_angular IS Lento
+
+IF velocidad IS Media AND distancia_sensor IS Cerca THEN giro_angular IS Rapido
+IF velocidad IS Media AND distancia_sensor IS Media THEN giro_angular IS Medio
+IF velocidad IS Media AND distancia_sensor IS Lejos THEN giro_angular IS Lento
+
+IF velocidad IS Alta AND distancia_sensor IS Cerca THEN giro_angular IS Rapido
+IF velocidad IS Alta AND distancia_sensor IS Media THEN giro_angular IS Rapido
+IF velocidad IS Alta AND distancia_sensor IS Lejos THEN giro_angular IS Lento
